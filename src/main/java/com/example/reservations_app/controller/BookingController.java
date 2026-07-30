@@ -2,61 +2,71 @@ package com.example.reservations_app.controller;
 
 import com.example.reservations_app.entity.Booking;
 import com.example.reservations_app.service.BookingService;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
+import java.time.LocalDate;
 import java.util.List;
-import java.util.Optional;
 
+@CrossOrigin(origins = {"http://localhost:5173", "http://127.0.0.1:5173"})
 @RestController
 @RequestMapping("/api/v1")
+
 public class BookingController {
 
     private final BookingService bookingService;
 
-    @Autowired
     public BookingController(BookingService bookingService) {
         this.bookingService = bookingService;
     }
 
-    // Create a new booking.
+    @PostMapping("/bookings")
+    public ResponseEntity<Booking> saveBooking(@RequestBody Booking booking) {
+        return ResponseEntity.ok(bookingService.saveBooking(booking));
+    }
 
     @PostMapping("/booking")
-    public ResponseEntity<Booking> saveBooking(@RequestBody Booking booking) {
-        Booking newBooking = bookingService.saveBooking(booking);
-        return ResponseEntity.ok(newBooking);
+    public ResponseEntity<Booking> saveBookingLegacy(@RequestBody Booking booking) {
+        return saveBooking(booking);
     }
 
-    // Get all bookings.
-     
-    @GetMapping("/bookings")
-    public List<Booking> getAllBookings() {
-        return bookingService.getAllBookings();
+    @GetMapping("/bookings/my")
+    public ResponseEntity<List<Booking>> getMyBookings(@RequestParam Integer userId) {
+        // return ResponseEntity.ok(bookingService.getBookingsForUser(email));
+          return ResponseEntity.ok(bookingService.getBookingsForUser(userId));
+
     }
 
-    // Get a booking by ID.
-    
+
+    @GetMapping("/bookings/occupied")
+    public ResponseEntity<List<String>> getOccupiedSeats(
+            @RequestParam String trainNumber,
+            @RequestParam LocalDate journeyDate) {
+        return ResponseEntity.ok(bookingService.getOccupiedSeatNumbers(trainNumber, journeyDate));
+    }
+
     @GetMapping("/bookings/{id}")
     public ResponseEntity<Booking> getBookingById(@PathVariable Long id) {
-        Optional<Booking> booking = bookingService.getBookingById(id);
-        return booking.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
+        return ResponseEntity.ok(bookingService.getBookingById(id));
     }
 
-    // Update a booking by ID.
-     
     @PutMapping("/bookings/{id}")
-    public ResponseEntity<Booking> updateBooking(@PathVariable Long id, @RequestBody Booking product) {
-        Booking updatedBooking = bookingService.updateBooking(id, product);
-        return ResponseEntity.ok(updatedBooking);
+    public ResponseEntity<Booking> updateBooking(@PathVariable Long id, @RequestBody Booking booking) {
+        return ResponseEntity.ok(bookingService.updateBooking(id, booking));
     }
 
-    // Delete a booking by ID.
-     
     @DeleteMapping("/bookings/{id}")
     public ResponseEntity<String> deleteBooking(@PathVariable Long id) {
-    	bookingService.deleteBooking(id);
+        bookingService.deleteBooking(id);
         return ResponseEntity.ok("Booking deleted successfully");
     }
 }

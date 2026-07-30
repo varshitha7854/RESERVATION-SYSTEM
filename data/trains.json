@@ -1,0 +1,1828 @@
+[ {
+  "trainNumber" : "12002",
+  "trainName" : "Shatabdi Express",
+  "source" : "DELHI",
+  "destination" : "MUMBAI",
+  "journeyDate" : "2026-07-01",
+  "seats" : [ {
+    "seatType" R",
+    "seatNumber" : "S3",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S4",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S5",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S6",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S7",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S8",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S9",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S10",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S11",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S12",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-1",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-2",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-3",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-4",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-5",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-6",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-7",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-8",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-1",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-2",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-3",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-4",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  } ],
+  "availableSeats" : [ {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S1",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S2",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S3",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S4",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S5",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S6",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S7",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S8",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S9",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S10",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S11",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S12",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-1",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-2",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-3",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-4",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-5",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-6",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-7",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-8",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-1",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-2",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-3",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-4",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  } ]
+}, {
+  "trainNumber" : "12301",
+  "trainName" : "Rajdhani Express",
+  "source" : "DELHI",
+  "destination" : "MUMBAI",
+  "journeyDate" : "2026-07-04",
+  "seats" : [ {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S1",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S2",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S3",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S4",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S5",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S6",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S7",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S8",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S9",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S10",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-1",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-2",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-3",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-4",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-5",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-6",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-1",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-2",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-3",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-4",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A1-1",
+    "booked" : false,
+    "acClass" : "AC_FIRST",
+    "seatClass" : "AC_FIRST",
+    "available" : true,
+    "baseFare" : 1500.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A1-2",
+    "booked" : false,
+    "acClass" : "AC_FIRST",
+    "seatClass" : "AC_FIRST",
+    "available" : true,
+    "baseFare" : 1500.0
+  } ],
+  "availableSeats" : [ {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S1",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S2",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S3",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S4",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S5",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S6",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S7",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S8",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S9",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S10",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-1",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-2",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-3",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-4",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-5",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-6",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-1",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-2",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-3",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-4",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A1-1",
+    "booked" : false,
+    "acClass" : "AC_FIRST",
+    "seatClass" : "AC_FIRST",
+    "available" : true,
+    "baseFare" : 1500.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A1-2",
+    "booked" : false,
+    "acClass" : "AC_FIRST",
+    "seatClass" : "AC_FIRST",
+    "available" : true,
+    "baseFare" : 1500.0
+  } ]
+}, {
+  "trainNumber" : "12259",
+  "trainName" : "Duronto Express",
+  "source" : "BANGALORE",
+  "destination" : "CHENNAI",
+  "journeyDate" : "2026-07-04",
+  "seats" : [ {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S1",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S2",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S3",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S4",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S5",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S6",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S7",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S8",
+    "booked" : true,
+    "seatClass" : "SLEEPER",
+    "available" : false,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-1",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-2",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-3",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-4",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-5",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-6",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  } ],
+  "availableSeats" : [ {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S1",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S2",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S3",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S4",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S5",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S6",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S7",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-1",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-2",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-3",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-4",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-5",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-6",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  } ]
+}, {
+  "trainNumber" : "12301",
+  "trainName" : "Rajdhani Express",
+  "source" : "DELHI",
+  "destination" : "MUMBAI",
+  "journeyDate" : "2026-07-01",
+  "seats" : [ {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S1",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S2",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S3",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S4",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S5",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S6",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S7",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S8",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S9",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S10",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-1",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-2",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-3",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-4",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-5",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-6",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-1",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-2",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-3",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-4",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A1-1",
+    "booked" : false,
+    "acClass" : "AC_FIRST",
+    "seatClass" : "AC_FIRST",
+    "available" : true,
+    "baseFare" : 1500.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A1-2",
+    "booked" : false,
+    "acClass" : "AC_FIRST",
+    "seatClass" : "AC_FIRST",
+    "available" : true,
+    "baseFare" : 1500.0
+  } ],
+  "availableSeats" : [ {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S1",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S2",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S3",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S4",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S5",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S6",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S7",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S8",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S9",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S10",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-1",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-2",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-3",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-4",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-5",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-6",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-1",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-2",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-3",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-4",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A1-1",
+    "booked" : false,
+    "acClass" : "AC_FIRST",
+    "seatClass" : "AC_FIRST",
+    "available" : true,
+    "baseFare" : 1500.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A1-2",
+    "booked" : false,
+    "acClass" : "AC_FIRST",
+    "seatClass" : "AC_FIRST",
+    "available" : true,
+    "baseFare" : 1500.0
+  } ]
+}, {
+  "trainNumber" : "12002",
+  "trainName" : "Shatabdi Express",
+  "source" : "DELHI",
+  "destination" : "MUMBAI",
+  "journeyDate" : "2026-07-04",
+  "seats" : [ {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S1",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S2",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S3",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S4",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S5",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S6",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S7",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S8",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S9",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S10",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S11",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S12",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-1",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-2",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-3",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-4",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-5",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-6",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-7",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-8",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-1",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-2",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-3",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-4",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  } ],
+  "availableSeats" : [ {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S1",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S2",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S3",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S4",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S5",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S6",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S7",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S8",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S9",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S10",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S11",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S12",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-1",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-2",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-3",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-4",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-5",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-6",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-7",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-8",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-1",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-2",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-3",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A2-4",
+    "booked" : false,
+    "acClass" : "AC_2_TIER",
+    "seatClass" : "AC_2_TIER",
+    "available" : true,
+    "baseFare" : 1000.0
+  } ]
+}, {
+  "trainNumber" : "12259",
+  "trainName" : "Duronto Express",
+  "source" : "BANGALORE",
+  "destination" : "CHENNAI",
+  "journeyDate" : "2026-07-01",
+  "seats" : [ {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S1",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S2",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S3",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S4",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S5",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S6",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S7",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S8",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-1",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-2",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-3",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-4",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-5",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-6",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  } ],
+  "availableSeats" : [ {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S1",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S2",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S3",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S4",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S5",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S6",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S7",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "SLEEPER",
+    "seatNumber" : "S8",
+    "booked" : false,
+    "seatClass" : "SLEEPER",
+    "available" : true,
+    "baseFare" : 250.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-1",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-2",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-3",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-4",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-5",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  }, {
+    "seatType" : "AC",
+    "seatNumber" : "A3-6",
+    "booked" : false,
+    "acClass" : "AC_3_TIER",
+    "seatClass" : "AC_3_TIER",
+    "available" : true,
+    "baseFare" : 750.0
+  } ]
+} ]

@@ -1,0 +1,79 @@
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :resolveMainClassName
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-07-08T13:16:01.888+05:30  INFO 23204 --- [reservations_app] [           main] c.e.r.ReservationsAppApplication         : Starting ReservationsAppApplication using Java 21.0.11 with PID 23204 (C:\projects\reservation_app\build\classes\java\main started by varsh in C:\projects\reservation_app)
+2026-07-08T13:16:01.895+05:30  INFO 23204 --- [reservations_app] [           main] c.e.r.ReservationsAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-07-08T13:16:03.186+05:30  INFO 23204 --- [reservations_app] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-08T13:16:03.267+05:30  INFO 23204 --- [reservations_app] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
+2026-07-08T13:16:04.206+05:30  INFO 23204 --- [reservations_app] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-07-08T13:16:04.229+05:30  INFO 23204 --- [reservations_app] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-08T13:16:04.230+05:30  INFO 23204 --- [reservations_app] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-08T13:16:04.335+05:30  INFO 23204 --- [reservations_app] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2351 ms
+2026-07-08T13:16:04.683+05:30  INFO 23204 --- [reservations_app] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-08T13:16:04.780+05:30  INFO 23204 --- [reservations_app] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-08T13:16:05.469+05:30  INFO 23204 --- [reservations_app] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-08T13:16:05.518+05:30  INFO 23204 --- [reservations_app] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-08T13:16:05.985+05:30  INFO 23204 --- [reservations_app] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e6b379c
+2026-07-08T13:16:05.988+05:30  INFO 23204 --- [reservations_app] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-08T13:16:06.094+05:30  WARN 23204 --- [reservations_app] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-08T13:16:06.148+05:30  INFO 23204 --- [reservations_app] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/dbreserve?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.1
+	Default catalog/schema: dbreserve/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-08T13:16:08.029+05:30  INFO 23204 --- [reservations_app] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-08T13:16:08.153+05:30  INFO 23204 --- [reservations_app] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-08T13:16:08.271+05:30  INFO 23204 --- [reservations_app] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+Hibernate: select te1_0.id from train te1_0 where upper(te1_0.source)=upper(?) and upper(te1_0.destination)=upper(?) and te1_0.journey_date=? limit ?
+Hibernate: select te1_0.id from train te1_0 where upper(te1_0.source)=upper(?) and upper(te1_0.destination)=upper(?) and te1_0.journey_date=? limit ?
+2026-07-08T13:16:09.412+05:30  WARN 23204 --- [reservations_app] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-08T13:16:09.487+05:30  INFO 23204 --- [reservations_app] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-08T13:16:10.181+05:30  INFO 23204 --- [reservations_app] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-07-08T13:16:10.189+05:30  INFO 23204 --- [reservations_app] [           main] c.e.r.ReservationsAppApplication         : Started ReservationsAppApplication in 9.198 seconds (process running for 9.98)
+2026-07-08T13:16:28.025+05:30  INFO 23204 --- [reservations_app] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-08T13:16:28.025+05:30  INFO 23204 --- [reservations_app] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-08T13:16:28.027+05:30  INFO 23204 --- [reservations_app] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Hibernate: select te1_0.id from train te1_0 where upper(te1_0.source)=upper(?) and upper(te1_0.destination)=upper(?) and te1_0.journey_date=? limit ?
+Hibernate: select te1_0.id from train te1_0 where upper(te1_0.source)=upper(?) and upper(te1_0.destination)=upper(?) and te1_0.journey_date=? limit ?
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id from app_user au1_0 where au1_0.email=? limit ?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: insert into app_user (email,name,password) values (?,?,?)
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.user_email=? order by b1_0.id desc
+2026-07-08T20:46:37.041+05:30  WARN 23204 --- [reservations_app] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h17m30s720ms871µs900ns).
+2026-07-08T20:52:23.389+05:30  WARN 23204 --- [reservations_app] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m46s284ms905µs300ns).

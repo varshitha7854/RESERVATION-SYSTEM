@@ -1,0 +1,766 @@
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :resolveMainClassName
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-07-15T19:01:19.309+05:30  INFO 13080 --- [reservations_app] [           main] c.e.r.ReservationsAppApplication         : Starting ReservationsAppApplication using Java 21.0.11 with PID 13080 (C:\projects\reservation_app\build\classes\java\main started by varsh in C:\projects\reservation_app)
+2026-07-15T19:01:19.315+05:30  INFO 13080 --- [reservations_app] [           main] c.e.r.ReservationsAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-07-15T19:01:20.494+05:30  INFO 13080 --- [reservations_app] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-15T19:01:20.601+05:30  INFO 13080 --- [reservations_app] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 4 JPA repository interfaces.
+2026-07-15T19:01:21.641+05:30  INFO 13080 --- [reservations_app] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-07-15T19:01:21.661+05:30  INFO 13080 --- [reservations_app] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-15T19:01:21.661+05:30  INFO 13080 --- [reservations_app] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-15T19:01:21.762+05:30  INFO 13080 --- [reservations_app] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2374 ms
+2026-07-15T19:01:21.976+05:30  INFO 13080 --- [reservations_app] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-15T19:01:22.081+05:30  INFO 13080 --- [reservations_app] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-15T19:01:22.842+05:30  INFO 13080 --- [reservations_app] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-15T19:01:22.908+05:30  INFO 13080 --- [reservations_app] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-15T19:01:23.569+05:30  INFO 13080 --- [reservations_app] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1dd76982
+2026-07-15T19:01:23.572+05:30  INFO 13080 --- [reservations_app] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-15T19:01:23.674+05:30  WARN 13080 --- [reservations_app] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-15T19:01:23.730+05:30  INFO 13080 --- [reservations_app] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/dbreserve?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.1
+	Default catalog/schema: dbreserve/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-15T19:01:25.753+05:30  INFO 13080 --- [reservations_app] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-15T19:01:25.986+05:30  INFO 13080 --- [reservations_app] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15T19:01:26.157+05:30  INFO 13080 --- [reservations_app] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-15T19:01:27.127+05:30  WARN 13080 --- [reservations_app] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-15T19:01:27.289+05:30  INFO 13080 --- [reservations_app] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-15T19:01:28.576+05:30  INFO 13080 --- [reservations_app] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-07-15T19:01:28.583+05:30  INFO 13080 --- [reservations_app] [           main] c.e.r.ReservationsAppApplication         : Started ReservationsAppApplication in 10.167 seconds (process running for 10.909)
+2026-07-15T19:01:39.287+05:30  INFO 13080 --- [reservations_app] [nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-15T19:01:39.288+05:30  INFO 13080 --- [reservations_app] [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-15T19:01:39.289+05:30  INFO 13080 --- [reservations_app] [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.user_email=? order by b1_0.id desc
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.user_email=? order by b1_0.id desc
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.user_email=? order by b1_0.id desc
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.user_email=? order by b1_0.id desc
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.user_email=? order by b1_0.id desc
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.user_email=? order by b1_0.id desc
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.user_email=? order by b1_0.id desc
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.user_email=? order by b1_0.id desc
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.user_email=? order by b1_0.id desc
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.user_email=? order by b1_0.id desc
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+2026-07-15T19:13:15.290+05:30  WARN 13080 --- [reservations_app] [nio-8081-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: ServletOutputStream failed to write: java.io.IOException: An established connection was aborted by the software in your host machine
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.train_number=? and b1_0.journey_date=? and b1_0.status=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.user_email=? order by b1_0.id desc
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.user_email=? order by b1_0.id desc
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.user_email=? order by b1_0.id desc
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.user_email=? order by b1_0.id desc
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.user_email=? order by b1_0.id desc
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.user_email=? order by b1_0.id desc
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+2026-07-15T20:23:21.245+05:30  WARN 13080 --- [reservations_app] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h7m57s278ms691µs200ns).
+2026-07-15T22:55:04.669+05:30  WARN 13080 --- [reservations_app] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h28m42s482ms635µs700ns).
+2026-07-16T09:02:37.100+05:30  WARN 13080 --- [reservations_app] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h7m33s326ms443µs500ns).
+2026-07-16T18:18:03.255+05:30  WARN 13080 --- [reservations_app] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h15m30s550ms230µs500ns).
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.user_email=? order by b1_0.id desc
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.user_email=? order by b1_0.id desc
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select b1_0.id,b1_0.age,b1_0.destination,b1_0.fare,b1_0.journey_date,b1_0.name,b1_0.passenger_email,b1_0.passenger_name,b1_0.seat_class,b1_0.seat_number,b1_0.source,b1_0.status,b1_0.title,b1_0.train_name,b1_0.train_number,b1_0.user_email from booking b1_0 where b1_0.train_number=? and b1_0.journey_date=? and b1_0.status=?
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select b1_0.id from booking b1_0 where b1_0.train_number=? and b1_0.journey_date=? and b1_0.seat_number=? and b1_0.status=? limit ?
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0 where upper(te1_0.train_number)=upper(?) and te1_0.journey_date=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select se1_0.id,se1_0.base_fare,se1_0.booked,se1_0.seat_class,se1_0.seat_number,se1_0.train_id from seat se1_0 where se1_0.train_id=? and upper(se1_0.seat_number)=upper(?)
+Hibernate: update seat set base_fare=?,booked=?,seat_class=?,seat_number=?,train_id=? where id=?
+Hibernate: insert into booking (age,destination,fare,journey_date,name,passenger_email,passenger_name,seat_class,seat_number,source,status,title,train_name,train_number,user_email) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select b1_0.id from booking b1_0 where b1_0.train_number=? and b1_0.journey_date=? and b1_0.seat_number=? and b1_0.status=? limit ?
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0 where upper(te1_0.train_number)=upper(?) and te1_0.journey_date=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select se1_0.id,se1_0.base_fare,se1_0.booked,se1_0.seat_class,se1_0.seat_number,se1_0.train_id from seat se1_0 where se1_0.train_id=? and upper(se1_0.seat_number)=upper(?)
+Hibernate: update seat set base_fare=?,booked=?,seat_class=?,seat_number=?,train_id=? where id=?
+Hibernate: insert into booking (age,destination,fare,journey_date,name,passenger_email,passenger_name,seat_class,seat_number,source,status,title,train_name,train_number,user_email) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+Hibernate: select au1_0.id,au1_0.email,au1_0.name,au1_0.password from app_user au1_0 where au1_0.email=?
+Hibernate: select b1_0.id from booking b1_0 where b1_0.train_number=? and b1_0.journey_date=? and b1_0.seat_number=? and b1_0.status=? limit ?
+Hibernate: select te1_0.id,te1_0.destination,te1_0.journey_date,te1_0.source,te1_0.train_name,te1_0.train_number from train te1_0 where upper(te1_0.train_number)=upper(?) and te1_0.journey_date=?
+Hibernate: select s1_0.train_id,s1_0.id,s1_0.base_fare,s1_0.booked,s1_0.seat_class,s1_0.seat_number from seat s1_0 where s1_0.train_id=?
+Hibernate: select se1_0.id,se1_0.base_fare,se1_0.booked,se1_0.seat_class,se1_0.seat_number,se1_0.train_id from seat se1_0 where se1_0.train_id=? and upper(se1_0.seat_number)=upper(?)
+Hibernate: update seat set base_fare=?,booked=?,seat_class=?,seat_number=?,train_id=? where id=?
+Hibernate: insert into booking (age,destination,fare,journey_date,name,passenger_email,passenger_name,seat_class,seat_number,source,status,title,train_name,train_number,user_email) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+2026-07-16T18:46:38.654+05:30  WARN 13080 --- [reservations_app] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m38s588ms862µs100ns).
+2026-07-16T19:52:30.326+05:30  WARN 13080 --- [reservations_app] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h5m51s672ms684µs600ns).
+2026-07-16T20:21:19.797+05:30  WARN 13080 --- [reservations_app] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s748ms137µs100ns).
+2026-07-16T20:22:25.428+05:30  WARN 13080 --- [reservations_app] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m5s632ms478µs400ns).
+2026-07-16T20:28:43.312+05:30  WARN 13080 --- [reservations_app] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m17s791ms866µs900ns).
+2026-07-16T20:50:38.618+05:30  WARN 13080 --- [reservations_app] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m54s763ms627µs800ns).
+2026-07-16T22:16:13.525+05:30  WARN 13080 --- [reservations_app] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h25m34s908ms740µs300ns).
