@@ -18,6 +18,7 @@ public class Booking {
     private Long id;
 
 
+
     @Column(nullable = false)
     private Integer userId;
 
@@ -35,12 +36,17 @@ public class Booking {
     @Column(nullable = false)
     private String source;
 
+    @Column(nullable = false)
+    private String destination;
+
 
     @Column(nullable = false)
     private LocalDate journeyDate;
 
     @Column(nullable = false)
     private String seatClass;
+
+
 
     @Column(nullable = false)
     private String seatNumber;
@@ -105,7 +111,13 @@ public class Booking {
         this.source = source;
     }
 
+    public String getDestination() {
+        return destination;
+    }
 
+    public void setDestination(String destination) {
+        this.destination = destination;
+    }
 
     public LocalDate getJourneyDate() {
         return journeyDate;
